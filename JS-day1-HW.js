@@ -16,13 +16,14 @@ function findWords(dog_string, dog_names) {
     if (dog_string.toLowerCase().includes(dogName.toLowerCase())) {
       console.log(`Matched with ${dogName}.`);
     } else {
-      console.log(`No Matches`);
+      console.log(`No Matches.`);
     }
   }
 }
 
 findWords(dog_string, dog_names);
 // Matched with Max.
+// No Matches.
 // Matched with PuRple.
 // Matched with dog.
 
