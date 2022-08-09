@@ -15,6 +15,8 @@ function findWords(dog_string, dog_names) {
   for (const dogName of dog_names) {
     if (dog_string.toLowerCase().includes(dogName.toLowerCase())) {
       console.log(`Matched with ${dogName}.`);
+    } else {
+      console.log(`No Matches`);
     }
   }
 }
