@@ -28,7 +28,7 @@ findWords(dog_string, dog_names);
 /*Write a fucntion that takes in an array and removes every even index with a splice,
 and replaces it with the string 'even index' */
 console.log("================= Exercise #2 =================");
-arr = ["Max", "Baseball", "Reboot", "Goku", "Trucks", "Rodger"];
+const arr = ["Max", "Baseball", "Reboot", "Goku", "Trucks", "Rodger"];
 
 function replaceEvens(arr) {
   new_arr = arr.map((element) => {
@@ -147,7 +147,7 @@ function is_consecutive2(a_list) {
   max = Math.max(...a_list);
   min = Math.min(...a_list);
 
-  arrayToCompare = [];
+  const arrayToCompare = [];
   for (let i = min; i <= max; i++) {
     arrayToCompare.push(i);
   }
@@ -162,3 +162,29 @@ function is_consecutive2(a_list) {
 
 console.log(is_consecutive2([2, 7, 4, 5, 6, 3])); // -> true
 console.log(is_consecutive2([1, 2, 4, 5])); // -> false
+
+// CODEWARS
+// https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript
+
+function solution(number) {
+  let result = 0;
+
+  for (let i = 1; i < number; i++) {
+    if (i % 3 == 0 || i % 5 == 0) {
+      result += i;
+    }
+  }
+
+  return result;
+}
+
+// https://www.codewars.com/kata/526571aae218b8ee490006f4/solutions/javascript
+var countBits = function (n) {
+  let count = 0;
+  for (const one of n.toString(2)) {
+    if (one == 1) {
+      count++;
+    }
+  }
+  return count;
+};
