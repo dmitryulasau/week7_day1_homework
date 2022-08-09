@@ -31,7 +31,7 @@ console.log("================= Exercise #2 =================");
 const arr = ["Max", "Baseball", "Reboot", "Goku", "Trucks", "Rodger"];
 
 function replaceEvens(arr) {
-  new_arr = arr.map((element) => {
+  let new_arr = arr.map((element) => {
     if (arr.indexOf(element) % 2 == 0) {
       element = "even index";
       return element;
@@ -144,8 +144,8 @@ console.log(is_consecutive([1, 2, 4, 5])); // -> false
 console.log("================= QUESTION 5.2 =================");
 // Approach 2.
 function is_consecutive2(a_list) {
-  max = Math.max(...a_list);
-  min = Math.min(...a_list);
+  const max = Math.max(...a_list);
+  const min = Math.min(...a_list);
 
   const arrayToCompare = [];
   for (let i = min; i <= max; i++) {
